@@ -9,4 +9,5 @@ public class DungeonTemplate : MonoBehaviour
      public GameObject[] bottomRooms;
      public GameObject[] leftRooms;
      public GameObject[] rightRooms;
+     public GameObject blockRoom;
 }

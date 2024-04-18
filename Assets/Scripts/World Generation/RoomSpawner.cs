@@ -17,7 +17,7 @@ public class RoomSpawner : MonoBehaviour
     private void Start()
     {
         templates = GameObject.FindGameObjectWithTag("Rooms").GetComponent<DungeonTemplate>();
-        Invoke("Spawn", 0.1f);
+        Invoke("Spawn", 0.2f);
     }
 
     void Spawn()
@@ -50,7 +50,15 @@ public class RoomSpawner : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Spawn Point") && other.GetComponent<RoomSpawner>().spawned == true)
+        if (other.CompareTag("Spawn Point") || other.CompareTag("Center"))
+        {
+            Destroy(gameObject);
+        }
+    }
+
+    private void Update()
+    {
+        if (spawned)
         {
             Destroy(gameObject);
         }
