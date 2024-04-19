@@ -515,7 +515,6 @@ MonoBehaviour:
   - {fileID: 6065714751356314284, guid: 693eabb408ff5e640aaa5c1d05b1e39e, type: 3}
   - {fileID: 2863800222012840600, guid: ced2f9ebded095f479b6436d4a817900, type: 3}
   - {fileID: 5022419589579920459, guid: cd4a5f2aa948b7248a4a5c97db21f690, type: 3}
-  - {fileID: 5022419589579920459, guid: cd4a5f2aa948b7248a4a5c97db21f690, type: 3}
   bottomRooms:
   - {fileID: 1283820550406250764, guid: c6bddd4ccf3ec054a93da0916651f7af, type: 3}
   - {fileID: 4099916880745295174, guid: 0da1a1c7049e4c94780085b0f5b803f2, type: 3}
@@ -526,7 +525,6 @@ MonoBehaviour:
   - {fileID: 2863800222012840600, guid: ced2f9ebded095f479b6436d4a817900, type: 3}
   - {fileID: 5548078296936490965, guid: d87624736e0d3e743b58f5d0591d97a1, type: 3}
   - {fileID: 6530990864101206719, guid: 5a7a1a684a8f9b746b05da0339140fb6, type: 3}
-  - {fileID: 5548078296936490965, guid: d87624736e0d3e743b58f5d0591d97a1, type: 3}
   - {fileID: 5548078296936490965, guid: d87624736e0d3e743b58f5d0591d97a1, type: 3}
   rightRooms:
   - {fileID: 4099916880745295174, guid: 0da1a1c7049e4c94780085b0f5b803f2, type: 3}
@@ -557,6 +555,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1130944466337061927, guid: 401a0f363cc958d4fa2200789ea912bd, type: 3}
+      propertyPath: dubbleSpawnCheck
+      value: 
+      objectReference: {fileID: 6697902674147048236, guid: 757f8e4275da95a4dbe9f5666f944697, type: 3}
+    - target: {fileID: 3930360889462831770, guid: 401a0f363cc958d4fa2200789ea912bd, type: 3}
+      propertyPath: dubbleSpawnCheck
+      value: 
+      objectReference: {fileID: 6697902674147048236, guid: 757f8e4275da95a4dbe9f5666f944697, type: 3}
     - target: {fileID: 4301843093858465604, guid: 401a0f363cc958d4fa2200789ea912bd, type: 3}
       propertyPath: m_Name
       value: Entry
@@ -605,6 +611,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7940589368822622153, guid: 401a0f363cc958d4fa2200789ea912bd, type: 3}
+      propertyPath: dubbleSpawnCheck
+      value: 
+      objectReference: {fileID: 6697902674147048236, guid: 757f8e4275da95a4dbe9f5666f944697, type: 3}
+    - target: {fileID: 8003157144835417674, guid: 401a0f363cc958d4fa2200789ea912bd, type: 3}
+      propertyPath: dubbleSpawnCheck
+      value: 
+      objectReference: {fileID: 6697902674147048236, guid: 757f8e4275da95a4dbe9f5666f944697, type: 3}
     m_RemovedComponents:
     - {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 401a0f363cc958d4fa2200789ea912bd, type: 3}

@@ -47,6 +47,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   openingDirection: 2
+  dubbleSpawnCheck: {fileID: 6697902674147048236, guid: 757f8e4275da95a4dbe9f5666f944697, type: 3}
   spawned: 0
 --- !u!61 &2223241516946191386
 BoxCollider2D:
@@ -142,6 +143,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   openingDirection: 4
+  dubbleSpawnCheck: {fileID: 6697902674147048236, guid: 757f8e4275da95a4dbe9f5666f944697, type: 3}
   spawned: 0
 --- !u!61 &8041543426469485223
 BoxCollider2D:
@@ -6187,6 +6189,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   openingDirection: 1
+  dubbleSpawnCheck: {fileID: 6697902674147048236, guid: 757f8e4275da95a4dbe9f5666f944697, type: 3}
   spawned: 0
 --- !u!61 &9102305997008338984
 BoxCollider2D:
@@ -6282,6 +6285,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   openingDirection: 3
+  dubbleSpawnCheck: {fileID: 6697902674147048236, guid: 757f8e4275da95a4dbe9f5666f944697, type: 3}
   spawned: 0
 --- !u!61 &852849808631456643
 BoxCollider2D:

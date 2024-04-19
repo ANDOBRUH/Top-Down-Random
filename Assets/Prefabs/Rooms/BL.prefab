@@ -1881,6 +1881,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   openingDirection: 2
+  dubbleSpawnCheck: {fileID: 6697902674147048236, guid: 757f8e4275da95a4dbe9f5666f944697, type: 3}
   spawned: 0
 --- !u!61 &6074890053688303914
 BoxCollider2D:
@@ -5983,6 +5984,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   openingDirection: 3
+  dubbleSpawnCheck: {fileID: 6697902674147048236, guid: 757f8e4275da95a4dbe9f5666f944697, type: 3}
   spawned: 0
 --- !u!61 &2170920644666430654
 BoxCollider2D:

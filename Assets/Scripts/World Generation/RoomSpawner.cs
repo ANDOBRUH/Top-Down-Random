@@ -9,15 +9,27 @@ public class RoomSpawner : MonoBehaviour
     // 2 = bottom
     // 3 = left
     // 4 = right
-
+    public GameObject dubbleSpawnCheck;
     private DungeonTemplate templates;
     private int random;
     public bool spawned = false;
 
+    Ray rayUp;
+    Ray rayDown;
+    Ray rayRight;
+    Ray rayLeft;
+    float maxDistance = 100;
+    public LayerMask layersToHit;
+
     private void Start()
     {
         templates = GameObject.FindGameObjectWithTag("Rooms").GetComponent<DungeonTemplate>();
-        Invoke("Spawn", 0.2f);
+        Invoke("Spawn", 0.3f);
+
+        rayUp = new Ray(transform.position, transform.up);
+        rayDown = new Ray(transform.position, transform.position);
+        rayRight = new Ray(transform.position, transform.right);
+        rayLeft = new Ray(transform.position, transform.up);
     }
 
     void Spawn()
@@ -54,6 +66,17 @@ public class RoomSpawner : MonoBehaviour
         {
             Destroy(gameObject);
         }
+
+
+        if (other.CompareTag("Spawn Point"))
+        {
+            Instantiate(dubbleSpawnCheck, transform.position, Quaternion.identity);
+        }
+    }
+
+    private bool CheckOpenings()
+    {
+
     }
 
     private void Update()
