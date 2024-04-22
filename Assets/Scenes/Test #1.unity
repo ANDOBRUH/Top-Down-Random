@@ -563,6 +563,10 @@ PrefabInstance:
       propertyPath: dubbleSpawnCheck
       value: 
       objectReference: {fileID: 6697902674147048236, guid: 757f8e4275da95a4dbe9f5666f944697, type: 3}
+    - target: {fileID: 4301843093004960152, guid: 401a0f363cc958d4fa2200789ea912bd, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4301843093858465604, guid: 401a0f363cc958d4fa2200789ea912bd, type: 3}
       propertyPath: m_Name
       value: Entry

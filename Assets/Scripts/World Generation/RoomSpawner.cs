@@ -74,11 +74,6 @@ public class RoomSpawner : MonoBehaviour
         }
     }
 
-    private bool CheckOpenings()
-    {
-
-    }
-
     private void Update()
     {
         if (spawned)

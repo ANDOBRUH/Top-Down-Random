@@ -7,6 +7,8 @@ TagManager:
   - Wall_Tile
   - Spawn Point
   - Rooms
+  - Center
+  - Wall
   layers:
   - Default
   - TransparentFX
