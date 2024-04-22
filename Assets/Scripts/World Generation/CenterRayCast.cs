@@ -8,38 +8,55 @@ public class CenterRayCast : MonoBehaviour
 {
     private bool hitCenter = false;
     private bool hitWall = false;
+    private bool runScript = true;
     public GameObject blockRoom;
+   
     void Start()
     {
-        Debug.DrawRay(transform.position, transform.TransformDirection(Vector2.up) * 10f, Color.red);
-        Debug.DrawRay(transform.position, transform.TransformDirection(Vector2.left) * 10f, Color.red);
-        Debug.DrawRay(transform.position, transform.TransformDirection(Vector2.right) * 10f, Color.red);
-        Debug.DrawRay(transform.position, transform.TransformDirection(Vector2.down) * 10f, Color.red);
-
-        RaycastHit2D hitUp = Physics2D.Raycast(transform.position, transform.TransformDirection(Vector2.up), 10f);
-        RaycastHit2D hitDown = Physics2D.Raycast(transform.position, transform.TransformDirection(Vector2.down), 10f);
-        RaycastHit2D hitLeft = Physics2D.Raycast(transform.position, transform.TransformDirection(Vector2.left), 10f);
-        RaycastHit2D hitRight = Physics2D.Raycast(transform.position, transform.TransformDirection(Vector2.right), 10f);
-
-        if (hitUp || hitDown|| hitLeft|| hitRight)
+        if (runScript)
         {
-            if (hitUp.collider.tag == "Center" || hitDown.collider.tag == "Center" || hitLeft.collider.tag == "Center" || hitRight.collider.tag == "Center")
+            Debug.DrawRay(transform.position, transform.TransformDirection(Vector2.up) * 10f, Color.red);
+            Debug.DrawRay(transform.position, transform.TransformDirection(Vector2.left) * 10f, Color.red);
+            Debug.DrawRay(transform.position, transform.TransformDirection(Vector2.right) * 10f, Color.red);
+            Debug.DrawRay(transform.position, transform.TransformDirection(Vector2.down) * 10f, Color.red);
+
+            RaycastHit2D hitUp = Physics2D.Raycast(transform.position, transform.TransformDirection(Vector2.up), 10f);
+            RaycastHit2D hitDown = Physics2D.Raycast(transform.position, transform.TransformDirection(Vector2.down), 10f);
+            RaycastHit2D hitLeft = Physics2D.Raycast(transform.position, transform.TransformDirection(Vector2.left), 10f);
+            RaycastHit2D hitRight = Physics2D.Raycast(transform.position, transform.TransformDirection(Vector2.right), 10f);
+
+            if (hitUp || hitDown || hitLeft || hitRight)
             {
-                hitCenter = true;
+                if (hitUp.collider.tag == "Center" || hitDown.collider.tag == "Center" || hitLeft.collider.tag == "Center" || hitRight.collider.tag == "Center")
+                {
+                    hitCenter = true;
+                }
             }
-        }
-       
 
+            if (hitUp || hitDown || hitLeft || hitRight)
+            {
 
-        if (hitUp.collider.tag == "Wall" || hitDown.collider.tag == "Wall" || hitLeft.collider.tag == "Wall" || hitRight.collider.tag == "Wall")
+                if (hitUp.collider.tag == "Wall" || hitDown.collider.tag == "Wall" || hitLeft.collider.tag == "Wall" || hitRight.collider.tag == "Wall")
+                {
+                    hitWall = true;
+                }
+            }
+            Debug.Log("Up: " + hitUp.collider.tag + " Down: " + hitDown.collider.tag + " Left: " + hitLeft.collider.tag + " Right: " + hitRight.collider.tag);
+            //if (hitCenter && !hitWall)
+            //{
+            //    Instantiate(blockRoom, transform.position, Quaternion.identity);
+            //    Destroy(gameObject);
+            //}
+        }  
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Center"))
         {
-            hitWall = true;
-        }
-
-        if (hitCenter)
-        {
-            Instantiate(blockRoom, transform.position, Quaternion.identity);
             Destroy(gameObject);
+            runScript = false;
+            Debug.Log("Yes");
         }
     }
 }

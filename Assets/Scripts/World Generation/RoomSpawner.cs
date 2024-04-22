@@ -25,11 +25,6 @@ public class RoomSpawner : MonoBehaviour
     {
         templates = GameObject.FindGameObjectWithTag("Rooms").GetComponent<DungeonTemplate>();
         Invoke("Spawn", 0.3f);
-
-        rayUp = new Ray(transform.position, transform.up);
-        rayDown = new Ray(transform.position, transform.position);
-        rayRight = new Ray(transform.position, transform.right);
-        rayLeft = new Ray(transform.position, transform.up);
     }
 
     void Spawn()

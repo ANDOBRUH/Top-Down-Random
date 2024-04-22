@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1771846351226576758}
   - component: {fileID: -494427318577284093}
+  - component: {fileID: -8817102687471971867}
   m_Layer: 0
   m_Name: Dubble Spawn Point
   m_TagString: Untagged
@@ -45,3 +46,29 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blockRoom: {fileID: 8222960151238354776, guid: 8599d4ad360e5d4469b9c6544c10a266, type: 3}
+--- !u!61 &-8817102687471971867
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6697902674147048236}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
