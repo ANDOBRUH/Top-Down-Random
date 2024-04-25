@@ -10,6 +10,7 @@ TagManager:
   - Center
   - Wall
   - Dubbel Room
+  - Black Out
   layers:
   - Default
   - TransparentFX

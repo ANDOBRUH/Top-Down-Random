@@ -6,15 +6,16 @@ public class PlayerController : MonoBehaviour
 {
     Rigidbody2D rb;
 
-    public float walkSpeed = 15f;
+    public GameObject cameraFollower;
+
+    public float walkSpeed;
     float speedLimiter = 0.7f;
     float inputHorizontal;
     float inputVertical;
 
     private void Start()
     {
-        rb = gameObject.GetComponent<Rigidbody2D>();
-        walkSpeed = 15f;
+        rb = gameObject.GetComponent<Rigidbody2D>();    
     }
 
     private void Update()
@@ -38,6 +39,14 @@ public class PlayerController : MonoBehaviour
         else
         {
             rb.velocity = Vector2.zero;
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Black Out"))
+        {
+            cameraFollower.transform.position = collision.transform.position;
         }
     }
 }

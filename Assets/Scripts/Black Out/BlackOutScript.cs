@@ -9,7 +9,7 @@ public class BlackOutScript : MonoBehaviour
     {
         if (show)
         {
-            GetComponent<SpriteRenderer>().material.color = new Color(0f, 0f, 0f, 255f);
+            GetComponent<SpriteRenderer>().material.color = new Color(0f, 0f, 0f, 255f);          
         }
         else
         {
