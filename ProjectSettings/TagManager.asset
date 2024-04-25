@@ -9,6 +9,7 @@ TagManager:
   - Rooms
   - Center
   - Wall
+  - Dubbel Room
   layers:
   - Default
   - TransparentFX
