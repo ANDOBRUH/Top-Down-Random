@@ -11,6 +11,8 @@ TagManager:
   - Wall
   - Dubbel Room
   - Black Out
+  - Room Copys
+  - Boss Room
   layers:
   - Default
   - TransparentFX

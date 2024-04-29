@@ -14,17 +14,10 @@ public class RoomSpawner : MonoBehaviour
     private int random;
     public bool spawned = false;
 
-    Ray rayUp;
-    Ray rayDown;
-    Ray rayRight;
-    Ray rayLeft;
-    float maxDistance = 100;
-    public LayerMask layersToHit;
-
     private void Start()
     {
         templates = GameObject.FindGameObjectWithTag("Rooms").GetComponent<DungeonTemplate>();
-        Invoke("Spawn", 0.3f);
+        Invoke("Spawn", 0.1f);
     }
 
     void Spawn()

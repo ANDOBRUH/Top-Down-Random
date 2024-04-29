@@ -6,8 +6,8 @@ using UnityEngine;
 
 public class CenterRayCast : MonoBehaviour
 {
-    private bool hitCenter = false;
-    private bool hitNothing = false;
+    //private bool hitCenter = false;
+    //private bool hitNothing = false;
     private bool runScript = false;
     public GameObject blockRoom;
    
