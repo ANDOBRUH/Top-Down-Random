@@ -13,6 +13,7 @@ TagManager:
   - Black Out
   - Room Copys
   - Boss Room
+  - Weapon
   layers:
   - Default
   - TransparentFX
