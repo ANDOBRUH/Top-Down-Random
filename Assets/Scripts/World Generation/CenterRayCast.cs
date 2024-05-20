@@ -59,7 +59,6 @@ public class CenterRayCast : MonoBehaviour
         else if (other.CompareTag("Dubbel Room"))
         {
             runScript = true;
-            Debug.Log("Yuh");
         }
     }
 }

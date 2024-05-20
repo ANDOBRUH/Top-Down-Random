@@ -25,7 +25,7 @@ public class WalkerGenerator : MonoBehaviour
     public int MaximumWalkers = 10;
     public int TileCount = default;
     public float FillPercentage = 0.4f;
-    public float WaitTime = 0.05f;
+    public float WaitTime = 0.01f;
 
     void Start()
     {

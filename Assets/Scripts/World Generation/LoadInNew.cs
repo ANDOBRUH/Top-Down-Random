@@ -24,7 +24,6 @@ public class LoadInNew : MonoBehaviour
             text.enabled = true;
             if (Input.GetKeyDown("f"))
             {
-                Debug.Log("Boss");
                 rooms = GameObject.FindGameObjectsWithTag("Room Copys");
                 for (int i = 0; i < rooms.Length; i++)
                 {
