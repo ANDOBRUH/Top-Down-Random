@@ -547,7 +547,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28f272ffa3853eb458138c836df3ab4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ShowBlackBoxes: 1
+  ShowBlackBoxes: 0
 --- !u!4 &791065569
 Transform:
   m_ObjectHideFlags: 0
